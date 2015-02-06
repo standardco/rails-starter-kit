@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
+# Use puma server
+gem 'puma', '~> 2.11.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
