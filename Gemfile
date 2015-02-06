@@ -43,3 +43,6 @@ group :development, :test do
   gem 'spring'
 end
 
+# Use bootstrap with SASS
+gem 'bootstrap-sass', '~> 3.3.3'
+
