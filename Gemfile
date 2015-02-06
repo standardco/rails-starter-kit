@@ -6,6 +6,8 @@ ruby '2.2.0'
 gem 'rails', '4.2.0'
 # Use puma server
 gem 'puma', '~> 2.11.0'
+# Use sidekiq for workers
+gem 'sidekiq', '~> 3.3.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
