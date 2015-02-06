@@ -46,3 +46,6 @@ end
 # Use bootstrap with SASS
 gem 'bootstrap-sass', '~> 3.3.3'
 
+# Use rails_12factor for Heroku compatibility
+gem 'rails_12factor', '~> 0.0.3'
+
