@@ -54,3 +54,5 @@ gem 'bootstrap-sass', '~> 3.3.3'
 # Use rails_12factor for Heroku compatibility
 gem 'rails_12factor', '~> 0.0.3'
 
+# Use devise for user authentication
+gem 'devise', '~> 3.4.1'
