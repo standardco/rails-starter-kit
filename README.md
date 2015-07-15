@@ -30,3 +30,7 @@ If everything goes well, you should be ready to start work on your new project.
 - User authentication via [Devise](https://github.com/plataformatec/devise)
 - Mailer configuration
 - Flash message placeholders
+
+## References
+
+Also check out Rails Best Practices: https://github.com/codeisstandard/rails-best-practices
