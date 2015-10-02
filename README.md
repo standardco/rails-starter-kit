@@ -15,8 +15,12 @@ After creating the new repository, follow these steps in the terminal:
 	$ mkdir demo
 	$ cd demo
 	$ git clone git@github.com:codeisstandard/rails-starter-kit.git .
-	$ git remote set-url origin git@github.com:codeisstandard/demo.git
+	$ git remote set-url origin git@github.com:[org/repo.git]
 	$ git push origin master
+	
+Just one more thing before you dive in:
+
+- Update the database configuration in `config/database.yml`
 	
 If everything goes well, you should be ready to start work on your new project.
 
