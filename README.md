@@ -18,9 +18,11 @@ After creating the new repository, follow these steps in the terminal:
 	$ git remote set-url origin git@github.com:[org/repo.git]
 	$ git push origin master
 	
-Just one more thing before you dive in:
+Just a couple more things before you dive in:
 
 - Update the database configuration in `config/database.yml`
+
+- Update the mailer host in `config/environments/development.rb` and `config/environments/production.rb`
 	
 If everything goes well, you should be ready to start work on your new project.
 
