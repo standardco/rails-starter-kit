@@ -11,6 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+//= require turbolinks
+
+$(document).ready(function() {
+	// Use .ready to ensure turbolinks works properly
+})
