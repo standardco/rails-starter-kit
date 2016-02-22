@@ -58,6 +58,10 @@ group :production do
   gem 'rails_12factor', '~> 0.0.3'
 end
 
+group :development do
+  gem 'pry'
+end
+
 # Use devise for user authentication
 gem 'devise', '~> 3.4.1'
 

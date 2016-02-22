@@ -17,10 +17,22 @@ After creating the new repository, follow these steps in the terminal:
 	$ git clone git@github.com:codeisstandard/rails-starter-kit.git .
 	$ git remote set-url origin git@github.com:[org/repo.git]
 	$ git push origin master
-	
+
+
+To update the following files with your project name, run the following command in the terminal:
+
+  $ rake project:setup 
+
+  This will update:
+
+  - README.md 
+  - app/views/layouts/application.html.erb 
+  - config/database.yml 
+  - config/initializers/session_store.rb
+  - config/application.rb
+
 Just a couple more things before you dive in:
 
-- Update the database configuration in `config/database.yml`
 
 - Update the mailer host in `config/environments/development.rb` and `config/environments/production.rb`
 	
