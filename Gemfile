@@ -58,6 +58,8 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'ffaker'
   gem 'pry'
+  # autoload .env vars
+  gem 'dotenv-rails'
 
 end
 
