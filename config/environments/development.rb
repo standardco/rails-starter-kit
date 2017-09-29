@@ -15,7 +15,7 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
-  
+
   # Default URL options for the mailer
   config.action_mailer.default_url_options = { host: 'localhost', port: ENV['PORT'] }
 
@@ -41,4 +41,20 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.action_mailer.delivery_method = :safety_mailer
+  config.action_mailer.safety_mailer_settings = {
+    allowed_matchers: [ /standardco.de/ ],
+    delivery_method: :smtp,
+    delivery_method_settings: {
+      :address => ENV["MAILER_HOST"],
+      :port => ENV["MAILER_PORT"],
+      :user_name => ENV["MAILER_USERNAME"],
+      :password => ENV["MAILER_PASSWORD"],
+      :authentication => :plain
+    }
+  }
+  config.action_mailer.default_options = {
+    :from => ENV["MAILER_FROM"]
+  }
 end

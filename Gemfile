@@ -60,6 +60,7 @@ group :development, :test do
   gem 'pry'
   # autoload .env vars
   gem 'dotenv-rails'
+  gem "safety_mailer"
 
 end
 
