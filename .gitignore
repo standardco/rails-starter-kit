@@ -27,4 +27,6 @@ pickle-email-*.html
 bower.json
 
 # Ignore environment variable file
-.env
+.env/public/packs
+/public/packs-test
+/node_modules

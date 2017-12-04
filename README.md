@@ -21,13 +21,13 @@ After creating the new repository, follow these steps in the terminal:
 
 To update the following files with your project name, run the following command in the terminal:
 
-  $ rake project:setup 
+  $ rake project:setup
 
   This will update:
 
-  - README.md 
-  - app/views/layouts/application.html.erb 
-  - config/database.yml 
+  - README.md
+  - app/views/layouts/application.html.erb
+  - config/database.yml
   - config/initializers/session_store.rb
   - config/application.rb
 
@@ -35,8 +35,21 @@ Just a couple more things before you dive in:
 
 
 - Update the mailer host in `config/environments/development.rb` and `config/environments/production.rb`
-	
+
 If everything goes well, you should be ready to start work on your new project.
+
+## Integration with React JS
+This application utilizes the ['react-rails' gem](https://github.com/reactjs/react-rails) to integrate the [React JS](https://reactjs.org/) library into the codebase. To generate a new React component:
+```
+$ rails g react:component HelloWorld greeting:string
+```
+Here we are telling rails to generate a new React component. The name of the component is **HelloWorld**, this component has one *prop*, **greeting**, and greeting has a data type of **string**.
+
+This command results in a new JS file under `/app/javascript/components/` which will contain all of the logic for the component. In order to render the component to the screen, you can simply use the helper method included with the 'react-rails' gem.
+```
+<%= react_component("HelloWorld", { greeting: "Hello" }) %>
+```  
+
 
 ## Out-of-the-box functionality
 
